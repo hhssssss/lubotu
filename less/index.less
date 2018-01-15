@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  }
+.clear-fix:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+.show{
+  width: 60%;
+  margin: 30px 20% 0 20%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 0;
+  .show_list{
+    width: 1000%;
+    overflow: hidden;
+    position: relative;
+    ul{
+      width: 100%;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li{
+        list-style: none;
+        width: 10%;
+        float: left;
+        overflow: hidden;
+        img{
+          width: 100%;
+          user-select: none;
+          border: none;
+        }
+      }
+    }
+  }
+  .control{
+    position: absolute;
+    height: 80px;
+    top: 50%;
+    margin-top:-40px ;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 80px;
+    .pre{
+      float: left;
+    }
+    .next{
+      float: right;
+    }
+    a{
+      display: block;
+      width: 5%;
+      font-family: "Microsoft YaHei UI";
+      opacity: 0.8;
+      user-select: none;
+      cursor: pointer;
+      z-index: 999;
+      &:hover{
+        background: rgba(0,0,0,0.2);
+      }
+    }
+    .slide{
+      height: 200px;
+      width: 90%;
+      float: left;
+      position: absolute;
+      top:50% ;
+      margin-top: -100px;
+      left: 5%;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+  .pointer{
+    width: 190px;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -90px;
+    span{
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+      background: white;
+      float: left;
+      margin-right:10px;
+      cursor: pointer;
+    }
+    &>:last-child{
+      margin-right: 0;
+    }
+    .blue{
+      background: skyblue;
+    }
+  }
+}
+.introduce{
+  width: 60%;
+  margin: 0 20%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 0;
+  .introduce_list{
+    width: 200%;
+    overflow: hidden;
+    position: relative;
+    ul{
+      width: 100%;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li{
+        list-style: none;
+        width: 10%;
+        float: left;
+        cursor: pointer;
+        img{
+          width: 100%;
+          border: none;
+        }
+      }
+    }
+  }
+}

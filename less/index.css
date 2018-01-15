@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.clear-fix:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+.show {
+  width: 60%;
+  margin: 30px 20% 0 20%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 0;
+}
+.show .show_list {
+  width: 1000%;
+  overflow: hidden;
+  position: relative;
+}
+.show .show_list ul {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.show .show_list ul li {
+  list-style: none;
+  width: 10%;
+  float: left;
+  overflow: hidden;
+}
+.show .show_list ul li img {
+  width: 100%;
+  user-select: none;
+  border: none;
+}
+.show .control {
+  position: absolute;
+  height: 80px;
+  top: 50%;
+  margin-top: -40px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 80px;
+}
+.show .control .pre {
+  float: left;
+}
+.show .control .next {
+  float: right;
+}
+.show .control a {
+  display: block;
+  width: 5%;
+  font-family: "Microsoft YaHei UI";
+  opacity: 0.8;
+  user-select: none;
+  cursor: pointer;
+  z-index: 999;
+}
+.show .control a:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.show .control .slide {
+  height: 200px;
+  width: 90%;
+  float: left;
+  position: absolute;
+  top: 50% ;
+  margin-top: -100px;
+  left: 5%;
+  cursor: pointer;
+  user-select: none;
+}
+.show .pointer {
+  width: 190px;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -90px;
+}
+.show .pointer span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: white;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.show .pointer > :last-child {
+  margin-right: 0;
+}
+.show .pointer .blue {
+  background: skyblue;
+}
+.introduce {
+  width: 60%;
+  margin: 0 20%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 0;
+}
+.introduce .introduce_list {
+  width: 200%;
+  overflow: hidden;
+  position: relative;
+}
+.introduce .introduce_list ul {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.introduce .introduce_list ul li {
+  list-style: none;
+  width: 10%;
+  float: left;
+  cursor: pointer;
+}
+.introduce .introduce_list ul li img {
+  width: 100%;
+  border: none;
+}
